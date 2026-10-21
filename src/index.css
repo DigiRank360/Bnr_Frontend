@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0b1f3f;
+  --color-gold: #d4a64a;
+  --color-ink: #1c2a40;
+  --color-muted: #5d6b82;
+  --color-soft: #f7f8fb;
+  --color-line: #e6e9f0;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-ink antialiased; }
+}
+
+@theme {
+  --animate-kenburns: kenburns 9s ease-out forwards;
+  --animate-glow: glow 7s ease-in-out infinite;
+  --animate-wa-glow: wa-glow 2.2s ease-in-out infinite;
+  --animate-glow-slow: glow 10s ease-in-out infinite reverse;
+
+  @keyframes kenburns {
+    from { transform: scale(1); }
+    to { transform: scale(1.12); }
+  }
+  @keyframes wa-glow {
+    0%, 100% { box-shadow: 0 0 10px 2px rgba(37, 211, 102, .45), 0 0 24px 6px rgba(37, 211, 102, .25); }
+    50% { box-shadow: 0 0 22px 8px rgba(37, 211, 102, .75), 0 0 50px 16px rgba(37, 211, 102, .4); }
+  }
+  @keyframes glow {
+    0%, 100% { opacity: .2; transform: scale(.95); }
+    50% { opacity: .55; transform: scale(1.08); }
+  }
+}
