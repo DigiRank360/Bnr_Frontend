@@ -16,8 +16,9 @@ import {
 export const site = {
   name: "BNR Group of Services",
   email: "info@bnrgroup.com",
-  phone: "+91 92328 68461",
-  address: "Mansarovar Dental College, Near, Bhopal, Madhya Pradesh 462042",
+  phone: "+91 755-4611479",
+  address:
+    "Plot,01 Ultimate plaza 2 second floor Mandakini square kolar road bhopal 462042",
   whatsapp: "919232868461",
   hours: "Mon – Sat, 9:30 AM – 6:30 PM",
   social: {
@@ -26,7 +27,8 @@ export const site = {
     facebook: "https://www.facebook.com/",
     linkedin: "https://www.linkedin.com/company/143647994/admin/dashboard/",
   },
-  mapQuery: "Mansarovar Dental College, Bhopal, Madhya Pradesh 462042",
+  mapQuery:
+    "Plot,01 Ultimate plaza 2 second floor Mandakini square kolar road bhopal 462042",
 };
 
 export const navLinks = [
